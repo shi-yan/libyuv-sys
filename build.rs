@@ -34,7 +34,7 @@ fn fetch() -> io::Result<()> {
     let status = Command::new("git")
         .current_dir(&output_dir())
         .arg("clone")
-        .arg("https://chromium.googlesource.com/libyuv/libyuv")
+        .arg("https://github.com/shi-yan/libyuv.git")
         .status()?;
 
     if status.success() {
